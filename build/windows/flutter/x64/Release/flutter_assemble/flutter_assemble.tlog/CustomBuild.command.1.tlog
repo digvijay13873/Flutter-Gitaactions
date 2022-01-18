@@ -1,0 +1,28 @@
+^C:\USERS\DIGVIJAY\DESKTOP\FLUTTERTEST5\BUILD\WINDOWS\CMAKEFILES\A9A0CE48A0EB4181CC943CB1C504BA57\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Digvijay\Documents\flutter PROJECT_DIR=C:\Users\Digvijay\Desktop\fluttertest5 FLUTTER_ROOT=C:\Users\Digvijay\Documents\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Digvijay\Desktop\fluttertest5\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Digvijay\Desktop\fluttertest5 FLUTTER_TARGET=lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=true PACKAGE_CONFIG=C:\Users\Digvijay\Desktop\fluttertest5\.dart_tool\package_config.json C:/Users/Digvijay/Documents/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\DIGVIJAY\DESKTOP\FLUTTERTEST5\BUILD\WINDOWS\CMAKEFILES\15B05BADD23314B83D302DFD6B382CCC\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\DIGVIJAY\DESKTOP\FLUTTERTEST5\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Digvijay/Desktop/fluttertest5/windows -BC:/Users/Digvijay/Desktop/fluttertest5/build/windows --check-stamp-file C:/Users/Digvijay/Desktop/fluttertest5/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

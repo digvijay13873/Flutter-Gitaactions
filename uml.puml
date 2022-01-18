@@ -1,0 +1,130 @@
+@startuml
+set namespaceSeparator ::
+
+class "page_navigation::flutter_flow::flutter_flow_theme.dart::FlutterFlowTheme" {
+  {static} +dynamic primaryColor
+  {static} +dynamic secondaryColor
+  {static} +dynamic tertiaryColor
+  +String* primaryFontFamily
+  +String* secondaryFontFamily
+  {static} +dynamic title1
+  {static} +dynamic title2
+  {static} +dynamic title3
+  {static} +dynamic subtitle1
+  {static} +dynamic subtitle2
+  {static} +dynamic bodyText1
+  {static} +dynamic bodyText2
+}
+
+class "page_navigation::flutter_flow::flutter_flow_util.dart::FormatType" {
+  +int* index
+  {static} +List<FormatType*>* values
+  {static} +FormatType* decimal
+  {static} +FormatType* percent
+  {static} +FormatType* scientific
+  {static} +FormatType* compact
+  {static} +FormatType* compactLong
+  {static} +FormatType* custom
+}
+
+"page_navigation::flutter_flow::flutter_flow_util.dart::FormatType" o-- "page_navigation::flutter_flow::flutter_flow_util.dart::FormatType"
+"dart::core::Enum" <|-- "page_navigation::flutter_flow::flutter_flow_util.dart::FormatType"
+
+class "page_navigation::flutter_flow::flutter_flow_util.dart::DecimalType" {
+  +int* index
+  {static} +List<DecimalType*>* values
+  {static} +DecimalType* automatic
+  {static} +DecimalType* periodDecimal
+  {static} +DecimalType* commaDecimal
+}
+
+"page_navigation::flutter_flow::flutter_flow_util.dart::DecimalType" o-- "page_navigation::flutter_flow::flutter_flow_util.dart::DecimalType"
+"dart::core::Enum" <|-- "page_navigation::flutter_flow::flutter_flow_util.dart::DecimalType"
+
+class "page_navigation::flutter_flow::flutter_flow_widgets.dart::FFButtonOptions" {
+  +dynamic textStyle
+  +double* elevation
+  +double* height
+  +double* width
+  +dynamic padding
+  +dynamic color
+  +dynamic disabledColor
+  +dynamic disabledTextColor
+  +dynamic splashColor
+  +double* iconSize
+  +dynamic iconColor
+  +dynamic iconPadding
+  +double* borderRadius
+  +dynamic borderSide
+}
+
+class "page_navigation::flutter_flow::flutter_flow_widgets.dart::FFButtonWidget" {
+  +String* text
+  +dynamic icon
+  +dynamic iconData
+  +dynamic Function()* onPressed
+  +FFButtonOptions* options
+  +bool* showLoadingIndicator
+  +dynamic createState()
+}
+
+"page_navigation::flutter_flow::flutter_flow_widgets.dart::FFButtonWidget" o-- "null::dynamic Function()"
+"page_navigation::flutter_flow::flutter_flow_widgets.dart::FFButtonWidget" o-- "page_navigation::flutter_flow::flutter_flow_widgets.dart::FFButtonOptions"
+
+class "page_navigation::flutter_flow::flutter_flow_widgets.dart::_FFButtonWidgetState" {
+  +bool* loading
+  +dynamic build()
+}
+
+class "page_navigation::flutter_flow::lat_lng.dart::LatLng" {
+  +double* latitude
+  +double* longitude
+  +int* hashCode
+  +String* toString()
+  +String* serialize()
+  +bool* ==()
+}
+
+class "page_navigation::flutter_flow::place.dart::FFPlace" {
+  +LatLng* latLng
+  +String* name
+  +String* address
+  +String* city
+  +String* state
+  +String* country
+  +String* zipCode
+  +int* hashCode
+  +String* toString()
+  +bool* ==()
+}
+
+"page_navigation::flutter_flow::place.dart::FFPlace" o-- "page_navigation::flutter_flow::lat_lng.dart::LatLng"
+
+class "page_navigation::home_page::home_page_widget.dart::HomePageWidget" {
+  +_HomePageWidgetState* createState()
+}
+
+class "page_navigation::home_page::home_page_widget.dart::_HomePageWidgetState" {
+  +dynamic scaffoldKey
+  +dynamic build()
+}
+
+class "page_navigation::main.dart::MyApp" {
+  +dynamic createState()
+}
+
+class "page_navigation::main.dart::_MyAppState" {
+  +dynamic build()
+}
+
+class "page_navigation::other_page::other_page_widget.dart::OtherPageWidget" {
+  +_OtherPageWidgetState* createState()
+}
+
+class "page_navigation::other_page::other_page_widget.dart::_OtherPageWidgetState" {
+  +dynamic scaffoldKey
+  +dynamic build()
+}
+
+
+@enduml
